@@ -9,7 +9,7 @@ const activeChainId: number = parseInt(`${process.env.NEXT_PUBLIC_CHAIN_ID}`)
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider desiredChainId={ChainId.Goerli}>
         <Head>
           <title>Next.js</title>
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />

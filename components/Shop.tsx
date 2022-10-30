@@ -9,10 +9,7 @@ type Props = {
   unknownContract: EditionDrop;
 };
 
-/**
- * This component shows the:
- * - All of the available unknowns from the edition drop and their price.
- */
+
 export default function Shop({ unknownContract }: Props) {
   const { data: availableUnknown, isLoading } = useNFTs(unknownContract);
 

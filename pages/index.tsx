@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "../styles/App.module.scss";
 import {
   useAddress,
-  useEditionDrop,
+  useContract,
   useOwnedNFTs,
   useNetwork,
   useNetworkMismatch,
@@ -18,7 +18,7 @@ import Container from 'react-bootstrap/Container';
 import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
-  const editionDrop = useEditionDrop(DROP_EDITION_ADDRESS);
+  const { contract: editionDrop } = useContract(DROP_EDITION_ADDRESS);
 
   const address = useAddress();
   const router = useRouter();

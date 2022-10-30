@@ -31,26 +31,23 @@ export const explorerUrl = () => {
 export const ChainIdname = () => {
 
   switch (process.env.NEXT_PUBLIC_CHAIN_ID) {
-    case '1':
       // Mainnet
+    case '1':
       return 'Ethereum'
-    case '4':
-      // Rinkeby
-      return 'Rinkeby'
-    case '5':
       // Goerli
+    case '5':
       return 'Goerli'
-    case '137':
       // Polygon
+    case '137':
       return 'Polygon'
-    case '80001':
       // Munbai
+    case '80001':
       return 'Mumbai'
-    case '250':
       // Fantom
+    case '250':
       return 'Fantom'
-    case '4002':
       // FantomTestnet
+    case '4002':
       return 'Fantom Testnet'
     default:
       return ''
